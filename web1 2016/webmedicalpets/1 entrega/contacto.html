@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WebMedicalPets</title>
+  <!--<link href="css/reset.css" rel="stylesheet" type="text/css">-->
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img class="imglogo" src="images/logo.gif" alt="WebMedicalPets" width="325" height="100">
+    </div>
+    <div class="contact">
+      <a href="contacto.html"><i class="fa fa-wpforms" aria-hidden="true"></i>&nbsp;Contáctanos</a>&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Log in</a>&nbsp;&nbsp;
+    </div>
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
+          <li><a href="mascotas.html"><i class="fa fa-paw" aria-hidden="true"></i>&nbsp; Mascotas</a></li>
+          <li><a href="medicamentos.html"><i class="fa fa-medkit" aria-hidden="true"></i>&nbsp; Medicamentos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section>
+      <div class="ficha">
+        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+        por consultas mandanos tus dudas que te responderemos en el menor tiempo posible
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <label for="name">Tu nombre:</label>
+                  </td>
+                  <td>
+                    <input id="name" class="input" name="name" type="text" value="" size="30" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="email">Tu email:</label>
+                  </td>
+                  <td>
+                    <input id="email" class="input" type="email" name="email" value="" size="30">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="labelConsulta" for="msj">Tu consulta:</label>
+                  </td>
+                  <td>
+                    <textarea id="message" class="input" name="message" rows="10" cols="31"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+
+                  </td>
+                  <td class="btnEnviarConsulta">
+                    <input id="submit_button" type="submit" value="Enviar consulta" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </form>
+      </div>
+  </section>
+
+  <footer>
+    <div class="footer">
+        copyright&copy;2016.design by juanma mendonça
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ruleta</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <div class="col-a">
+        <div class="logo">
+          ‘Les Jeux’
+        </div>
+      </div>
+      <div class="col-b">
+        <div class="apuesta">
+          <div class="typeBet">
+            <select class="form-control" id="clase-apuesta" >
+                <option value="selecciona">Selecciona una apuesta</option>
+                <option value="pleno">Pleno</option>
+                <option value="semiplenos">SemiPlenos</option>
+                <option value="paridad">Paridad</option>
+                <option value="color">Color</option>
+                <option value="mayores">Mayores</option>
+                <option value="menores">Menores</option>
+            </select>
+          </div>
+          <div id="pleno"  class="plenos">
+            <select id="pleno" name="numberlist">
+              <option>Seleccione valor</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div id="semiplenos" class="semiplenos">
+            <select id="semiplenos" name="numberlist">
+              <option>Seleccione valor</option>
+              <option value="0">0-1</option>
+              <option value="1">1-2</option>
+              <option value="2">2-3</option>
+              <option value="3">3-4</option>
+              <option value="4">4-5</option>
+              <option value="5">5-6</option>
+              <option value="6">6-7</option>
+              <option value="7">7-8</option>
+              <option value="8">8-9</option>
+              <option value="9">9-10</option>
+            </select>
+          </div>
+          <div id="paridad" class="">
+          <select class=""  id="paridad">
+              <option>Seleccione paridad</option>
+              <option value="par">par</option>
+              <option value="impar">impar</option>
+          </select>
+      </div>
+      <div id="color" class="">
+          <select class=""  id="color">
+              <option>Seleccione color</option>
+              <option value="black">negro</option>
+              <option value="red">rojo</option>
+          </select>
+      </div>
+      <div id="mayores" class="">
+          <select class=""  id="mayores">
+              <option></option>
+          </select>
+      </div>
+      <div id="menores" class="">
+          <select class=""  id="mayores">
+              <option></option>
+          </select>
+      </div>
+      <div class="cantFichas">
+          <label for="cantidad">Cantidad de fichas:</label>
+          <input type="text" id="cantidad" class="form-group" value="">
+      </div>
+      <div class="">
+          <input type="button" class="" id="botonAgregar"  name="" value="Agregar Apuesta">
+          <input type="button" class="" id="botonTirar"  name="" value="TIRAR">
+          <div id="premio" class="premio">
+          </div>
+      </div>
+        </div>
+        <div>
+           <span id="saldo" class="saldo">Saldo $  </span>
+        </div>
+
+      </div>
+    </header>
+    <section>
+
+        <tbody>
+          <div id="tablero">
+            <table>
+            <tr>
+              <td></td>
+              <td id='0'>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td id='1'>1</td>
+              <td id='2'>2</td>
+              <td id='3'>3</td>
+            </tr>
+            <tr>
+              <td id='4'>4</td>
+              <td id='5'>5</td>
+              <td id='6'>6</td>
+            </tr>
+            <tr>
+              <td id='7'>7</td>
+              <td id='8'>8</td>
+              <td id='9'>9</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td id='10'>10</td>
+              <td></td>
+            </tr>
+            </table>
+          </div>
+          
+        </tbody>
+
+      <div id="lista" class="lista">
+        <!-- Lista apuestas -->
+        </div>
+        <div id="msj" class="msj">
+          <!-- Fotos -->
+        </div>
+
+    </section>
+    <footer>
+      copyright&copy;2016.design by juanma mendonça
+    </footer>
+  <script type="text/javascript" src="js/ruleta.js"></script>
+ <script type="text/javascript" src="js/inicio.js">
+  </script> 
+  </body>
+</html>

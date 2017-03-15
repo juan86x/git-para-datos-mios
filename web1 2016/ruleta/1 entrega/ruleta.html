@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ruleta</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <div class="col-a">
+        <div class="logo">
+          ‘Les Jeux’
+        </div>
+      </div>
+      <div class="col-b">
+        <div class="apuesta">
+          Numero a apostar: &nbsp;<input type="number" id="numero" name="numero" style="width:50px;" value="">&nbsp;
+          <input type="button" onClick="tirarRuleta()" name="tirar" value="Tirar">
+        </div>
+       <span id="saldo" class="saldo">  Saldo $100</span
+      </div>
+    </header>
+    <section>
+      <table>
+        <tbody>
+          <tr>
+            <td></td>
+            <td id='0'>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td id='1'>1</td>
+            <td id='2'>2</td>
+            <td id='3'>3</td>
+          </tr>
+          <tr>
+            <td id='4'>4</td>
+            <td id="5">5</td>
+            <td id="6">6</td>
+          </tr>
+          <tr>
+            <td id="7">7</td>
+            <td id="8">8</td>
+            <td id="9">9</td>
+          </tr>
+        </tbody>
+      </table>
+        <div id="msj" class="msj">
+          <!-- Fotos -->
+        </div>
+    </section>
+    <footer>
+      <div id="contador" class="contador">
+          false
+      </div>
+      copyright&copy;2016.design by juanma mendonça
+    </footer>
+  <script type="text/javascript" src="js/ruleta.js">
+  </script>
+  </body>
+</html>
