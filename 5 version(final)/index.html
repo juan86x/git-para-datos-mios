@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cálculo y Manejo en Pasturas</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+  <h1>Cálculo y Manejo en Pasturas</h1>
+
+  <div id="disponibilidad">
+    <h2>Determinación de la disponibilidad de pastura</h2>
+    <label for="horas">Horas de pastoreo:</label>
+    <input type="number" id="horas" min="0">
+    <button onclick="calcularDisponibilidad()">Calcular</button>
+    <p id="resultadoDisponibilidad"></p>
+  </div>
+
+  <div id="crecimiento">
+    <h2>Crecimiento de la pastura</h2>
+    <label for="dias">Días de crecimiento:</label>
+    <input type="number" id="dias" min="0">
+    <button onclick="calcularCrecimiento()">Calcular</button>
+    <p id="resultadoCrecimiento"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
